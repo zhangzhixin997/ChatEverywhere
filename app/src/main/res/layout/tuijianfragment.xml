@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/mine_default_item_line"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/basic_white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <zzx.com.chateverywhere.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/tx"/>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="25dp"
+                android:text="动漫"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/basic_white"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <zzx.com.chateverywhere.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/back1"/>
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:padding="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:text="音乐"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/basic_white"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <zzx.com.chateverywhere.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/back2" />
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:padding="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="电影"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/basic_white"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <zzx.com.chateverywhere.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/back4" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:padding="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="小说"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
