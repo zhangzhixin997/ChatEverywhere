@@ -19,7 +19,5 @@ import zzx.com.chateverywhere.Sxdata;
 
 public class MainActivity extends BaseActivity {
 
-
-
 }
 

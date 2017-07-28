@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 <LinearLayout
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true">
+    android:layout_height="wrap_content">
     <LinearLayout
         android:id="@+id/index"
         android:orientation="vertical"
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-            <ImageView
-                android:src="@drawable/bottomindex"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
             <TextView
+                android:id="@+id/hometext"
+                android:drawableTop="@drawable/homeback"
                 android:gravity="center"
                 android:text="首页"
                 android:layout_width="match_parent"
@@ -30,27 +27,23 @@
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <ImageView
-            android:src="@drawable/bottomchat"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
         <TextView
+            android:id="@+id/chattext"
+            android:drawableTop="@drawable/chatback"
             android:gravity="center"
             android:text="聊天"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/friend"
+        android:id="@+id/group"
         android:orientation="vertical"
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <ImageView
-            android:src="@drawable/group"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
         <TextView
+            android:id="@+id/grouptext"
+            android:drawableTop="@drawable/groupback"
             android:gravity="center"
             android:text="寻友"
             android:layout_width="match_parent"
@@ -62,11 +55,8 @@
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <ImageView
-            android:src="@drawable/mine"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
         <TextView
+            android:drawableTop="@drawable/mineback"
             android:id="@+id/minetext"
             android:gravity="center"
             android:text="我的"

@@ -7,5 +7,12 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="MineItemLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginLeft">@dimen/mime_info_padding</item>
+        <item name="android:layout_marginRight">@dimen/mime_info_padding</item>
+        <item name="android:background">@color/mine_default_item_line</item>
+    </style>
 
 </resources>

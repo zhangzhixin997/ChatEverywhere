@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="mine_default_item_line">#F4F4F4</color>
+    <color name="basic_white">#FFFFFF</color>
+    <color name="mine_back">#CCFFCC</color>
 </resources>

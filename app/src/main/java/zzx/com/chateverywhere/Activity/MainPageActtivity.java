@@ -38,21 +38,21 @@ public class MainPageActtivity extends BaseActivity {
     ViewPager pager;
     @ViewInject(R.id.bottombar)
     View bottom;
-    @ViewInject(R.id.index)
-    LinearLayout index;
-    @ViewInject(R.id.chat)
-    LinearLayout chat;
-    @ViewInject(R.id.friend)
-    LinearLayout friend;
-    @ViewInject(R.id.mine)
-    LinearLayout mine;
+    @ViewInject(R.id.hometext)
+    TextView home;
+    @ViewInject(R.id.chattext)
+    TextView chat;
+    @ViewInject(R.id.grouptext)
+    TextView group;
+    @ViewInject(R.id.minetext)
+    TextView mine;
     private MainPageAdapter adapter;
     private IndexFragment indexFragment;
     private ChatFragment chatFragment;
     private FriendFragment friendFragment;
     private MineFragment mineFragment;
     private Handler handler=new Handler();
-    @Event({R.id.index,R.id.chat,R.id.mine,R.id.friend})
+    @Event({R.id.index,R.id.chat,R.id.mine,R.id.group})
     private void onClick(View v){
            switch (v.getId()){
                case R.id.index:
@@ -61,7 +61,7 @@ public class MainPageActtivity extends BaseActivity {
                case R.id.chat:
                    pager.setCurrentItem(1);
                    break;
-               case R.id.friend:
+               case R.id.group:
                    pager.setCurrentItem(2);
                    break;
                case R.id.mine:
@@ -73,7 +73,6 @@ public class MainPageActtivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         initflash();
         setadpter();
-
     }
     public void initflash(){
           indexFragment= new IndexFragment();
@@ -97,12 +96,35 @@ public class MainPageActtivity extends BaseActivity {
             @Override
             public void onPageSelected(int position) {
                // pager.setCurrentItem(position);
+                setselected(position);
             }
             @Override
             public void onPageScrollStateChanged(int state) {
             }
         });
-        pager.setCurrentItem(0);
+//        pager.setCurrentItem(0);
+        home.setSelected(true);
     }
+    public void setselected(int position){
+        home.setSelected(false);
+        chat.setSelected(false);
+        group.setSelected(false);
+        mine.setSelected(false);
+        switch (position){
+            case 0:
+                home.setSelected(true);
+                break;
+            case 1:
+                chat.setSelected(true);
+                break;
+            case 2:
+                group.setSelected(true);
+                break;
+            case 3:
+                mine.setSelected(true);
+                break;
+        }
+    }
+
 
 }
